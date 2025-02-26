@@ -1,0 +1,155 @@
+  *{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+body {
+    font-family: 'Archivo Narrow', sans-serif;
+    font-size: 18px;
+    color: #333;
+  }
+  
+.hero {
+    background: 
+      url("A.jpg") 
+      no-repeat 
+      center center / cover; 
+    height: 60vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+  }
+  
+.hero-overlay {
+    text-align: center;
+    color: #fff;
+    position: relative;
+  }
+  
+.hero-overlay h1 {
+    font-size: 4rem; 
+    margin-bottom: 0.5rem;
+  }
+  
+.hero-overlay.tagline {
+    font-size: 1.6rem;
+    font-weight: 400;
+  }
+  
+.section-darkbeige {
+    background-color: #C2B280; 
+    color: #fff; 
+    padding: 2rem 0;
+  }
+  
+.section-darkbeige h2 {
+    text-align: center; 
+    margin-bottom: 1.5rem;
+    font-size: 2.5rem;
+    color: #fff;
+  }
+  
+.columns {
+    display: flex;
+    gap: 2rem; 
+  }
+  
+.container {
+    width: 65%;
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+ 
+.col-image-lime img {
+    display: block;       
+    width: 400px;
+    height: 300px;       
+    margin: 0 auto;      
+    border: 4px solid #fff;
+  }
+  
+  .float-right {
+    float: right;
+    margin-left: 1rem;  
+    margin-bottom: 1rem; 
+  }
+
+  .section-white {
+    background-color: #fff;  
+    color: #333;             
+    padding: 2rem 0;         
+  }
+  
+  .section-white h2 {
+    text-align: center;
+    margin-bottom: 2rem;
+    font-size: 2rem;
+  }
+  
+  .container {
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+  
+  .photo-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 2rem; 
+  }
+  
+  .photo-item {
+    background-color: #f9f9f9;
+    padding: 1rem;
+    text-align: center;
+    border: 1px solid #ddd;
+  }
+
+  .photo-item img {
+    width: 100%;
+    height: auto;
+    display: block;
+    margin-bottom: 0.5rem;
+  }
+  
+  .photo-item h3 {
+    margin-bottom: 0.5rem;
+    font-size: 1.1rem; 
+  }
+  
+  .photo-item p {
+    font-size: 0.95rem; 
+    color: #555;       
+  }
+  
+  .section-red {
+    background-color: rgb(220, 173, 145);
+    text-align: center;    
+    padding: 4rem 0;     
+  }
+
+  .section-red h2 {
+    font-size: 2rem;
+    margin-bottom: 1rem;
+  }
+
+  .section-red p {
+    font-size: 1.5rem;
+    max-width: 800px; 
+    margin: 0 auto;    
+    line-height: 1.6;
+  }
+
+  .footer-dark {
+    background-color: #333;
+    color: #ccc;
+    text-align: left;
+    padding: 3rem 0;
+  }
+
+  .footer-dark p {
+    margin: 0;  
+    font-size: 0.9rem;
+  }

@@ -1,0 +1,256 @@
+@import url('https://fonts.googleapis.com/css2?family=Archivo+Black&display=swap');
+
+#btn_nike {
+  display: inline-block;
+  position: relative;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  width: 200px;
+  height: 100px;
+  margin: auto;
+  margin-top: 110px;
+  background-color: transparent;
+  text-decoration: none;
+  transition: all 0.3s ease;
+}
+
+#btn_nike .nike-text {
+  font-family: 'Archivo Black', sans-serif;
+  font-style: italic;
+  color: rgb(255, 98, 0);
+  font-size: 32px;
+  z-index: 2;
+  transition: all 0.3s ease;
+}
+
+
+#btn_nike .nike-swoosh {
+    position: absolute;
+    width: 180px;
+    top: 10%;
+    left: 50%;
+    transform: translate(-50%, 0) scale(1);
+    opacity: 0;
+    transition: all 0.4s ease;
+    z-index: 1;
+  }
+  
+  #btn_nike:hover .nike-text {
+    transform: translateY(-20px);
+    color: black;
+  }
+  
+  #btn_nike:hover .nike-swoosh {
+    opacity: 1;
+    transform: scale(1);
+    transform: translateX(-50%) translateY(-10px);
+    filter: brightness(0) saturate(100%) sepia(1) hue-rotate(-20deg) saturate(500%) brightness(1.2);
+  }
+
+
+#btn_apple {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    position: relative;
+  }
+  
+  #btn_apple .apple-logo {
+    width: 100px;
+    height: auto;
+    transition: transform 0.3s ease, filter 1.5s ease;
+    transform-origin: center;
+  }
+  
+
+  #btn_apple:hover .apple-logo {
+    animation: appleBounce 0.6s ease infinite alternate;
+    filter: brightness(1.2) saturate(150%) hue-rotate(360deg);
+  }
+  
+
+  @keyframes appleBounce {
+    0% {
+      transform: scale(1) skew(0deg, 0deg);
+    }
+    50% {
+      transform: scale(1.2, 0.9) skew(-3deg, 3deg);
+    }
+    100% {
+      transform: scale(0.95, 1.1) skew(3deg, -2deg);
+    }
+  }
+  
+  #btn_samsung {
+    display: block;
+    position: relative;
+    width: 200px;
+    height: 80px;
+    margin: 100px auto;
+    background-color: transparent;
+    text-align: center;
+    text-decoration: none;
+    overflow: hidden;
+    transition: all 0.4s ease;
+  }
+  
+  #btn_samsung .samsung-text {
+    font-family: 'Arial Black', sans-serif;
+    font-size: 28px;
+    color: white;
+    position: relative;
+    z-index: 2;
+  }
+  
+  #btn_samsung .samsung-logo {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 220px;
+    transform: translate(-50%, -50%) scale(0.1);
+    opacity: 0;
+    transition: transform 0.5s ease-out, opacity 0.5s ease-out;
+    z-index: 1;
+  }
+  
+  #btn_samsung:hover .samsung-logo {
+    transform: translate(-50%, -50%) scale(1);
+    opacity: 1;
+  }
+  
+#btn_samsung {
+    position: relative;
+    display: block;
+    width: 200px;
+    height: 100px;
+    margin: 100px auto;
+    background-color: white;
+    text-align: center;
+    overflow: hidden;
+  }
+  
+  #btn_samsung .samsung-text {
+    position: absolute;
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 28px;
+    font-weight: bold;
+    font-family: 'Arial Black', sans-serif;
+    color: rgb(45, 79, 164);
+    z-index: 2;
+    transition: opacity 0.4s ease, transform 0.4s ease;
+  }
+  
+  #btn_samsung .samsung-logo {
+    position: absolute;
+    width: 180px;
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%, -50%) scale(0.2);
+    opacity: 0;
+    z-index: 1;
+    transition: all 0.5s ease;
+  }
+  
+  #btn_samsung:hover .samsung-text {
+    opacity: 0;
+    transform: translate(-50%, -50%) scale(1.1);
+  }
+  
+  #btn_samsung:hover .samsung-logo {
+    opacity: 1;
+    transform: translate(-50%, -50%) scale(1.1) rotate(-2deg);
+  }
+  
+#btn_coca {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    transition: all 0.4s ease;
+  }
+  
+  .coca-logo {
+    width: 200px;
+    transition: all 0.4s ease;
+  }
+  
+  #btn_coca:hover .coca-logo {
+    animation: swing-skew-wave 1s infinite ease-in-out;
+    filter: 
+      drop-shadow(0 0 5px #fdabab)
+      drop-shadow(0 0 10px #ff4d4d)
+      brightness(1.2)
+      saturate(150%);
+    transform: scale(1.05);
+  }
+  
+  @keyframes swing-skew-wave {
+    0% {
+      transform: rotate(0deg) skewX(0deg) translateY(0px);
+    }
+    25% {
+      transform: rotate(2deg) skewX(2deg) translateY(-2px);
+    }
+    50% {
+      transform: rotate(-2deg) skewX(-2deg) translateY(2px);
+    }
+    75% {
+      transform: rotate(1deg) skewX(1deg) translateY(-1px);
+    }
+    100% {
+      transform: rotate(0deg) skewX(0deg) translateY(0px);
+    }
+  }
+  
+  #btn_instagram {
+    display: block;
+    position: relative;
+    width: 130px;
+    height: 130px;
+    margin: 75px auto;
+    border-radius: 30px;
+    overflow: hidden;
+    text-align: center;
+    transition: all 0.3s ease;
+  }
+  
+  #btn_instagram .insta-bg {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(45deg, #feda75, #fa7e1e, #d62976, #962fbf, #4f5bd5);
+    background-size: 150% 150%;
+    transition: background-position 1s ease;
+    z-index: 1;
+  }
+  
+  #btn_instagram:hover .insta-bg {
+    animation: insta-gradient-flow 3s infinite linear;
+  }
+  
+  #btn_instagram .insta-icon {
+    position: relative;
+    width: 60%;
+    height: auto;
+    z-index: 2;
+    margin-top: 25px;
+  }
+  
+  @keyframes insta-gradient-flow {
+    0% {
+      background-position: 0% 50%;
+    }
+    50% {
+      background-position: 100% 50%;
+    }
+    100% {
+      background-position: 0% 50%;
+    }
+  }
+  

@@ -1,0 +1,130 @@
+/* 通用设置 */
+body {
+    margin: 0;
+    font-family: 'Share Tech Mono', monospace;
+    background-color: #161010;
+    color: white;
+  }
+
+  @import url('https://fonts.googleapis.com/css2?family=Share+Tech+Mono&family=Orbitron:wght@500&display=swap');
+
+  h1, nav a {
+    font-family: 'Share Tech Mono', monospace;
+  }
+
+  /* Header */
+  .site-header {
+    background-color: #FFAB35;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px 20px;
+  }
+  
+  
+  .logo {
+    height: 50px;
+  }
+  
+  .main-nav ul {
+    list-style: none;
+    display: flex;
+    gap: 30px;
+    margin: 0;
+    padding: 0;
+  }
+  
+  
+  .main-nav a {
+    text-decoration: none;
+    color: black;
+    font-weight: bold;
+    font-size: 18px;
+    text-shadow: 1px 1px #1B4EB5;
+    padding-right: 30px;
+  }
+
+  
+  
+  /* 标题部分 */
+  .main-title {
+    text-align: center;
+    color: #6FFF80;
+    text-shadow: 2px 2px #FFAB35;
+    font-size: 2em;
+    margin-top: 30px;
+  }
+  
+  .subtitle {
+    text-align: center;
+    color: #FFAB35;
+    font-size: 1em;
+    margin-bottom: 20px;
+  }
+  
+  .intro {
+    text-align: center;
+    max-width: 700px;
+    margin: 0 auto;
+    font-size: 1rem;
+    line-height: 1.5;
+  }
+  
+  /* 中间绿线 */
+  .divider {
+    border: 1px solid #6FFF80;
+    width: 90%;
+    margin: 30px auto;
+  }
+  
+  /* Feature部分 */
+  .feature-section {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 50px;
+    padding: 50px;
+    flex-wrap: wrap;
+  }
+  
+  .emoji-img {
+    width: 480px;
+    height: auto;
+    border: 2px solid #1B4EB5;
+    border-radius: 10px;
+  }
+  
+  .feature-box {
+    border: 3px solid #1B4EB5;
+    padding: 20px 30px;
+    border-radius: 10px;
+    color: white;
+    max-width: 500px;
+    background-color: transparent;
+  }
+  
+  
+  .feature-box ul {
+    list-style: none;
+    padding-left: 0;
+  }
+  
+  .feature-box li {
+    margin: 15px 0;
+    padding: 12px 16px;
+    border: 2px solid #1B4EB5;
+    border-radius: 4px;
+    font-size: 1.1em;
+    color: white;
+  }
+  
+  /* Footer */
+  .site-footer {
+    text-align: center;
+    font-size: 0.9em;
+    color: #6FFF80;
+    border-top: 2px solid #6FFF80;
+    margin-top: 50px; /* 原本可能设得太高了 */
+    padding: 10px 0;
+  }
+  
